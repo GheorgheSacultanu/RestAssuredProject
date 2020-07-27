@@ -48,7 +48,6 @@ public class GenerateKeys {
         Assert.assertEquals(resp.getStatusCode(), 200);
         JsonPath js = resp.jsonPath();
         String request_token = js.get("request_token");
-        System.out.println(request_token);
         return request_token;
     }
 

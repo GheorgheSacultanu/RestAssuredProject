@@ -107,5 +107,16 @@ public class T07_remove_items {
                 body("success", equalTo(true));
     }
 
+    @AfterTest
+    public void deleteList() {
+        RestAssured.given()
+                .auth()
+                .oauth2(write_access_token)
+                .delete(url.setupURL() + "/" + id).
+                then().
+                assertThat().
+                statusCode(200).
+                body("status_message", equalTo("The item/record was deleted successfully."));
+    }
 
 }

@@ -1,9 +1,9 @@
 package helpers;
 
 public class Credentials {
-    String username = "gsacultanu";
+    String username = "QA_Engineer";
     String password = "193746";
-    String bearer = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1ZmM4ZDJiMGE4Y2M2ZDkxMzdlMWM2MzUyZTIxMjgyNiIsInN1YiI6IjVmMTcxMjNiYzkyYzVkMDAzMzMxOTNmYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.XC3IyZq9adUYMlvqv8fOF8ekjrDMH-IH9ronutY9V-k";
+    String bearer = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmZTAwZmZmY2I3MjQ4OTQyYTdkZDNjODQ3MjQyNDJmYSIsInN1YiI6IjVmMWYzMmU1MTFjMDY2MDAzNTIxMWNkMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.EBERu4V3PktDn-QTmJIDCP2dIVOarwKEM0CT5S9Ccwg";
 
     public String getUsername() {
         return this.username;
@@ -16,6 +16,5 @@ public class Credentials {
     public String getBearer() {
         return this.bearer;
     }
-
 
 }

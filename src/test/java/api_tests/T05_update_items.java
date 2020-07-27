@@ -89,7 +89,6 @@ public class T05_update_items {
         item.setComment("The best movie");
 
 
-
         ItemWrapper itemWrapper = new ItemWrapper();
         itemWrapper.addItem(item);
         Gson gson = new Gson();

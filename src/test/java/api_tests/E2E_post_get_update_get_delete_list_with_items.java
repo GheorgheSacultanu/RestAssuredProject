@@ -143,12 +143,11 @@ public class E2E_post_get_update_get_delete_list_with_items {
         item.setComment("The best movie");
 
 
-
         ItemWrapper itemWrapper = new ItemWrapper();
         itemWrapper.addItem(item);
         Gson gson = new Gson();
         String body = gson.toJson(itemWrapper);
-        RestAssured.given().log().all().
+        RestAssured.given().
                 contentType(JSON).
                 accept(JSON).
                 body(body).
@@ -166,7 +165,7 @@ public class E2E_post_get_update_get_delete_list_with_items {
     @Test
     public void TC07_getList_with_items() {
         RestAssured.
-                given().log().all().
+                given().
                 auth().
                 oauth2(write_access_token).
                 get(url.setupURL() + "/" + id).
